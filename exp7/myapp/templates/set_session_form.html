@@ -1,0 +1,10 @@
+<form method="post" action="{% url 'set_session' %}">
+    {% csrf_token %}
+    <label for="username">Enter Username:</label>
+    <input type="text" name="username" id="username" required>
+
+    <label for="email">Enter Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <button type="submit">Set Session Data</button>
+</form>
